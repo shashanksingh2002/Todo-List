@@ -3,8 +3,79 @@
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-ul{
-    list-style: none;
+ol{
+    margin: 1rem 1rem;
+}
+
+.page-title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.outer-container{
+    margin:2.5rem auto;
+    outline: 2px solid blueviolet;
+    border-radius: 12px;
+    width:60vw;
+}
+
+label{
+    font-size: larger;
+}
+
+form{
+    margin:1rem 1rem;
+}
+
+form button{
+    width:100%;
+    padding: 1rem;
+    background-color: blueviolet;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: x-large;
+    transition: all 0.4s ease-in-out;
+}
+
+form button:hover{
+    background-color: plum;
+}
+
+input{
+    width:100%;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: larger;
+}
+
+.li-class{
+    margin:1rem auto;
+    width: 80%;
+    padding: 0.7rem;
+    font-size: larger;
+    border: 2px solid purple;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-class p{
+    width: 80%;
+}
+
+.li-class button{
+    width:2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    margin-left: 1rem;
 }

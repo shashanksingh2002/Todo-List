@@ -11,19 +11,21 @@
         <p class="page-title">Todo-Application</p>
             <form method="post" class="form-data">
                 <div class="title-todo">
-                    <label for="title" >Title</label>
-                    <input type="text" name="title" id="title">
+                    <label for="title" >Title:</label>
+                    <input type="text" required name="title" id="title">
                 </div>
+                <br>
                 <div class="desc-todo">
-                    <label for="description">Description</label>
-                    <input type="text" name="description" id="description">
+                    <label for="description">Description:</label>
+                    <input type="text" required name="description" id="description">
                 </div>
+                <br>
                 <button type="submit">ADD-TODO</button>
             </form>
             <p class="page-title">My Todo's</p>
-                <ul class="my-todo">
+                <ol class="my-todo">
                     <li>No Todo's currently</li>
-                </ul>
+                </ol>
     </div>
     <script src="script.js"></script>
 </body>

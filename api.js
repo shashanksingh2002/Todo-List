@@ -37,6 +37,22 @@ app.get('/todos',(req,res)=>{
     })
 });
 
+app.delete('/delete',(req,res)=>{
+    const todoToDelete = req.body;
+    readFile((dbData)=>{
+        let jsonData = JSON.parse(dbData);
+        jsonData = jsonData.filter(data => data.description !== todoToDelete.delete);
+        fs.writeFile(__dirname+'/backend/todos.json', JSON.stringify(jsonData), err => {
+            if (err) {
+                console.error('Error writing to file:', err);
+                return res.status(500).json({ error: 'Internal Server Error' });
+            }
+            res.json(jsonData);
+        });
+        
+    })
+})
+
 app.listen(port,()=>{
     console.log("App is running successfully at port:",port);
 });
