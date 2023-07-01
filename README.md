@@ -26,7 +26,7 @@
   <h2>Installation</h2>
   <ol>
     <li>Clone the repository: <code>git clone https://github.com/shashanksingh2002/Todo-List.git</code></li>
-    <li>Navigate to the project directory: <code>cd todo-application</code></li>
+    <li>Navigate to the project directory: <code>cd todo-List</code></li>
     <li>Install dependencies: <code>npm install</code></li>
   </ol>
 
@@ -41,10 +41,8 @@
   <pre>
 todo-application/
   |- public/
-  |    |- css/
-  |    |    |- styles.css
-  |    |- js/
-  |    |    |- script.js
+  |    |- styles.css
+  |    |- script.js
   |    |- index.html
   |- api.js
   |- readFile.js
@@ -55,8 +53,8 @@ todo-application/
   </pre>
 
   <h2>Database</h2>
-  <p>The application uses a file system to store the todo data. The <code>database.json</code> file in the <code>src/</code>
-    directory serves as the database file. Each todo is stored as a JSON object in an array within the <code>database.json</code>
+  <p>The application uses a file system to store the todo data. The <code>todos.json</code> file in the <code>backend/</code>
+    directory serves as the database file. Each todo is stored as a JSON object in an array within the <code>todos.json</code>
     file.</p>
 
   <h2>Contributing</h2>
