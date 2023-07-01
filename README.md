@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <h1>Todo Application(IN DEVELOPMENT)</h1>
+  <h1>Todo Application</h1>
   <p>This is a simple Todo application built using HTML, CSS, JavaScript, Node.js, Express, and a file system for data storage.</p>
 
   <h2>Features</h2>
